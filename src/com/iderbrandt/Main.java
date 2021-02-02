@@ -24,8 +24,11 @@ public class Main {
 
 
         Collections.sort(movieList);
+
+        //Task 1
         System.out.println(shortest);
 
+        //Task 2
         System.out.println("List after the use of" +
                 " Collection.sort() :\n" + movieList);
 
