@@ -1,6 +1,7 @@
 package com.iderbrandt;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -15,14 +16,18 @@ public class Main {
 
         String shortest = movieList.get(0);
 
-                    for (String element : movieList) {
-                if (element.length() < shortest.length()) {
-                    shortest = element;
-                }
+                for (String element : movieList) {
+            if (element.length() < shortest.length()) {
+                shortest = element;
             }
+        }
 
-            System.out.println(shortest);
 
+        Collections.sort(movieList);
+        System.out.println(shortest);
+
+        System.out.println("List after the use of" +
+                " Collection.sort() :\n" + movieList);
 
     }
 }
